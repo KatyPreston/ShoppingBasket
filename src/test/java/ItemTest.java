@@ -8,7 +8,7 @@ public class ItemTest {
 
     @Before
     public void before(){
-        item = new Item(10, false);
+        item = new Item(10);
     }
 
     @Test

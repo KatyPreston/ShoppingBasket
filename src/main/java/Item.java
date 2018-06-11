@@ -2,9 +2,9 @@ public class Item {
     private double cost;
     private boolean twoForOneDiscount;
 
-    public Item(double cost, boolean twoForOneDiscount){
+    public Item(double cost){
         this.cost = cost;
-        this.twoForOneDiscount = twoForOneDiscount;
+        this.twoForOneDiscount = false;
     }
 
     public double getCost() {

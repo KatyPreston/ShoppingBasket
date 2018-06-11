@@ -6,4 +6,8 @@ public class Customer {
         this.basket = basket;
         this.loyaltyCard = loyaltyCard;
     }
+
+    public boolean hasLoyaltyCard(){
+        return this.loyaltyCard;
+    }
 }

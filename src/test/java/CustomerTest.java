@@ -1,6 +1,9 @@
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {
     Customer customer;
@@ -10,9 +13,14 @@ public class CustomerTest {
 
     @Before
     public void before(){
-        item = new Item(10, false);
+        item = new Item(10);
         items = new ArrayList<>();
         basket = new Basket(items);
         customer = new Customer(basket, false);
+    }
+
+    @Test
+    public void canSeeIfHaveLoyaltyCard(){
+        assertEquals(false, customer.hasLoyaltyCard());
     }
 }

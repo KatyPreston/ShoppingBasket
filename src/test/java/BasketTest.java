@@ -12,7 +12,7 @@ public class BasketTest {
 
     @Before
     public void before(){
-        item = new Item(10, false);
+        item = new Item(10);
         items = new ArrayList<>();
         basket = new Basket(items);
     }
@@ -44,5 +44,13 @@ public class BasketTest {
         basket.addItem(item);
         basket.addItem(item);
         assertEquals(20, basket.totalCost(), 0.1);
+    }
+
+    @Test
+    public void cangetTenPercentOffForOverTwenty(){
+        basket.addItem(item);
+        basket.addItem(item);
+        basket.addItem(item);
+        assertEquals(27, basket.totalCost(), 0.1);
     }
 }
