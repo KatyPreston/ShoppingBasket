@@ -25,5 +25,5 @@ public class ItemTest {
     public void canSetDiscount(){
         assertEquals(true, item.setTwoForOneOffer());
     }
-    
+
 }
