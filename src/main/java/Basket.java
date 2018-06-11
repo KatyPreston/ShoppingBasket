@@ -33,6 +33,17 @@ public class Basket {
         }
     }
 
+    public double totalCostWithLoyaltyCard(Customer customer){
+        double total = this.totalCost();
+        if(customer.hasLoyaltyCard() == true){
+            double reduction = total * 0.02;
+            return total -= reduction;
+        }
+        else{
+            return total;
+        }
+    }
+
 }
 
 

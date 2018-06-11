@@ -53,4 +53,11 @@ public class BasketTest {
         basket.addItem(item);
         assertEquals(27, basket.totalCost(), 0.1);
     }
+
+    @Test
+    public void canUseLoyaltyCard(){
+        Customer customer = new Customer(basket, true);
+        basket.addItem(item);
+        assertEquals(9.8, basket.totalCostWithLoyaltyCard(customer), 0.1);
+    }
 }

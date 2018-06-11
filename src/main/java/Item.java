@@ -7,7 +7,7 @@ public class Item {
         this.twoForOneDiscount = false;
     }
 
-    public double getCost() {
+    public double getCost(){
         return this.cost;
     }
 
