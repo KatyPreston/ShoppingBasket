@@ -6,4 +6,16 @@ public class Item {
         this.cost = cost;
         this.twoForOneDiscount = twoForOneDiscount;
     }
+
+    public double getCost() {
+        return this.cost;
+    }
+
+    public boolean hasDiscount(){
+        return this.twoForOneDiscount;
+    }
+
+    public boolean setTwoForOneOffer(){
+        return this.twoForOneDiscount = true;
+    }
 }

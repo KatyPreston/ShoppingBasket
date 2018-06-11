@@ -10,7 +10,7 @@ public class CustomerTest {
 
     @Before
     public void before(){
-        item = new Item();
+        item = new Item(10, false);
         items = new ArrayList<>();
         basket = new Basket(items);
         customer = new Customer(basket, false);
