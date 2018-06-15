@@ -19,6 +19,7 @@ public class Basket {
         this.items.clear();
     }
 
+    //this method should be made private, and totalCostWithLoyaltyCard renamed so it is clear that is the method to use to get the total cost of the basket
     public double totalCost() {
         double total = 0;
         for (Item item : items) {
@@ -43,6 +44,8 @@ public class Basket {
             return total;
         }
     }
+
+
 
 }
 

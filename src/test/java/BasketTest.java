@@ -47,11 +47,12 @@ public class BasketTest {
     }
 
     @Test
-    public void cangetTenPercentOffForOverTwenty(){
+    public void canGetTenPercentOffForOverTwenty(){
+        Customer customer = new Customer(basket, false);
         basket.addItem(item);
         basket.addItem(item);
         basket.addItem(item);
-        assertEquals(27, basket.totalCost(), 0.1);
+        assertEquals(27, basket.totalCostWithLoyaltyCard(customer), 0.1);
     }
 
     @Test
@@ -60,4 +61,5 @@ public class BasketTest {
         basket.addItem(item);
         assertEquals(9.8, basket.totalCostWithLoyaltyCard(customer), 0.1);
     }
+
 }
